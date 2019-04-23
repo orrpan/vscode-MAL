@@ -1,5 +1,9 @@
 # vscode-mal 
 
+For now installing is done by cloning repo and installing locally.
+
+[Docs » Extensions » Install extension Installing Extensions](https://vscode-docs.readthedocs.io/en/stable/extensions/install-extension/)
+
 ## Features
 
 Syntax for Meta Attack Language.
