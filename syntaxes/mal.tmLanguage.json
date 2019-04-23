@@ -1,0 +1,95 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mal",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#interpolated"
+		},
+		{
+			"include": "#support"
+		},
+		{
+			"include": "#entity"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.operator",
+					"match": "\\||->|&|<--|-->|E |3 |0-1|\\*|1-\\|*|\\#"
+				},
+				{
+					"name": "keyword.identifier",
+					"match": "\\b([A-Z][_A-Za-z0-9]*)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.mal",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mal",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comment": {
+			"name": "comment.mal",
+			"patterns": [
+				{
+					"name": "comment.line.double-slash",
+					"begin": "//",
+					"end": "\n"
+				}
+			]
+		},
+		"interpolated": {
+			"name": "interpolated.mal",
+			"patterns": [
+				{
+					"name": "wrapper.interpolated",
+					"begin": "\\b(\\(s*)\\b",
+					"end": "\\b(s*)\\b"
+				}
+			]
+		},
+		"entity": {
+			"name": "entity.mal",
+			"patterns": [
+				{
+					"name": "entity.name.class",
+					"match": "\\b(category)\\b"
+				},
+				{
+					"name": "entity.other.inherited-class",
+					"match": "\\b(extends)\\b"
+				},
+				{
+					"name": "entity.name.type",
+					"match": "\\b(asset|abstractAsset)\\b"
+				},
+				{
+					"name": "entity.name.function",
+					"match": "\\b(attack\\ step|associations)\\b"
+				},
+				{
+					"name": "entity.other",
+					"match": "\\b(info|rationale)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.mal"
+}
