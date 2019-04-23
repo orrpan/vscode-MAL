@@ -19,6 +19,9 @@
 		},
 		{
 			"include": "#entity"
+		},
+		{
+			"include": "#header"
 		}
 	],
 	"repository": {
@@ -83,10 +86,24 @@
 				{
 					"name": "entity.name.function",
 					"match": "\\b(attack\\ step|associations)\\b"
-				},
+				}
+			]
+		},
+		"support": {
+			"name": "entity.mal",
+			"patterns": [
 				{
-					"name": "entity.other",
+					"name": "support.type",
 					"match": "\\b(info|rationale)\\b"
+				}
+			]
+		},
+		"header": {
+			"name": "header.mal",
+			"patterns": [
+				{
+					"name": "header",
+					"match": "\\b(include.*\\.mal)\\b"
 				}
 			]
 		}

@@ -22,7 +22,8 @@
                     "mal"
                 ],
                 "extensions": [
-                    ".mal"
+                    ".mal",
+                    ".malinc"
                 ],
                 "configuration": "./language-configuration.json"
             }
