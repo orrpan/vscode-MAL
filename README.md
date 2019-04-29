@@ -18,6 +18,10 @@ vscode > 1.33.0
 
 * Syntax implementing started.
 
+### 0.0.2
+
+Adding syntax for missed operators
+
 ### 0.0.1
 
 Initial release of vscode-mal syntax for Meta Attack Language

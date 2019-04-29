@@ -29,11 +29,19 @@
 			"patterns": [
 				{
 					"name": "keyword.operator",
-					"match": "\\||->|&|<--|-->|E |3 |0-1|\\*|1-\\|*|\\#"
+					"match": "\\||->|\\s&\\s|<--|-->|\\sE\\s|\\s3\\s|0-1|\\s\\*\\s|1-\\*|\\s#\\s|\\s1\\s|\\V,"
 				},
 				{
-					"name": "keyword.identifier",
-					"match": "\\b([A-Z][_A-Za-z0-9]*)\\b"
+					"name": "keyword.identifer",
+					"match": "\\b(category)\\b"
+				},
+				{
+					"name": "keyword.other",
+					"match": "\\b(include.*\\.mal)\\b"
+				},
+				{
+					"name": "keyword",
+					"match": "\\b(extends|asset|abstractAsset)\\b"
 				}
 			]
 		},
@@ -73,15 +81,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.class",
-					"match": "\\b(category)\\b"
-				},
-				{
-					"name": "entity.other.inherited-class",
-					"match": "\\b(extends)\\b"
-				},
-				{
-					"name": "entity.name.type",
-					"match": "\\b(asset|abstractAsset)\\b"
+					"match": "\\b([A-Z][_A-Za-z0-9]*)\\b"
 				},
 				{
 					"name": "entity.name.function",
@@ -95,15 +95,6 @@
 				{
 					"name": "support.type",
 					"match": "\\b(info|rationale)\\b"
-				}
-			]
-		},
-		"header": {
-			"name": "header.mal",
-			"patterns": [
-				{
-					"name": "header",
-					"match": "\\b(include.*\\.mal)\\b"
 				}
 			]
 		}
