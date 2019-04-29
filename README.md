@@ -20,13 +20,16 @@ vscode > 1.33.0
 
 ### 0.0.2
 
-Adding syntax for missed operators
+* Adding syntax for missed operators
+* Change highlighting for import
+* Change highlighting for Category
+* Start using ascii
 
 -----------------------------------------------------------------------------------------------------------
 
 ### 0.0.1
 
-Initial release of vscode-mal syntax for Meta Attack Language
+* Initial release of vscode-mal syntax for Meta Attack Language
 
 -----------------------------------------------------------------------------------------------------------
 

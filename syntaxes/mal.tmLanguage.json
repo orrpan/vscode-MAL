@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator",
-					"match": "\\||->|\\s&\\s|<--|-->|\\sE\\s|\\s3\\s|0-1|\\s\\*\\s|1-\\*|\\s#\\s|\\s1\\s|\\V,"
+					"match": "\\||->|\\s\\x26\\s|<--|-->|\\sE\\s|\\s3\\s|0-1|\\s\\x2A\\s|1-\\x2A|\\s\\x23\\s|\\s1\\s|\\V,"
 				},
 				{
 					"name": "keyword.identifer",
